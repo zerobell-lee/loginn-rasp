@@ -39,7 +39,7 @@ if (!fs.existsSync('config.json')) {
 	console.log('Cannot find config!!');
 }
 else {
-	configObj = JSON.parse(fs.readFileSync'config.json', {encoding: 'utf8'});
+	configObj = JSON.parse(fs.readFileSync('config.json', {encoding: 'utf8'}));
 	host = configObj['host'];
 	topic = configObj['topic'];
 	mqtt_client_username = configObj['username'];
